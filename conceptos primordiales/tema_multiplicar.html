@@ -1,0 +1,18 @@
+<meta charset="UTF-8" />
+<h1>PROGRAMA - AÑO MUNDIAL DE FIFA</h1>
+<script>
+  function saltarLinea() {
+    document.write("<br><br><br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  tabla = parseInt(prompt("Ingrese el numero de la tabla a multiplicar:"))
+  imprimir("FOR")
+  for(i = 1;i <= 10; i++){
+    imprimir(tabla+" X "+i+" = "+(tabla*i))
+  }
+</script>

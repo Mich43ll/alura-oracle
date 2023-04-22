@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA - CALCULAR LA MEDIA DE LAS EDADES DE UNA MEDIA</h1>
+<script>
+    function saltarLinea(){
+        document.write("<br><br><br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase)
+        saltarLinea();
+    }
+
+    var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia:"))
+    var cantidad =1;
+    var suma = 0;
+
+    while(cantidad <= numeroMiembros){
+        edad = parseInt(prompt("Ingrese la edad del familiar"));
+        var suma = suma + edad;
+        
+        cantidad ++;
+    }
+    promedio = suma / numeroMiembros;
+    imprimir("El promedio de la edad de los "+numeroMiembros+" familiares es: "+promedio)
+
+</script>
